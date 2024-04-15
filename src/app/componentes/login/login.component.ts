@@ -20,19 +20,6 @@ export class LoginComponent implements OnInit {
   };
 
   login() {
-    this.logerService.loguear(this.log.user, this.log.pass).subscribe(
-      response => {
-        console.log(response);
-        if (response === "Ok") {
           this.router.navigate(['/registro']); // Redirige a /registro si la respuesta es "Ok"
-        } else {
-          alert("Usuario o contraseña incorrectos"); // Muestra un mensaje de alerta en caso de error
-        }
-      },
-      error => {
-        console.log(error);
-        alert("Ha ocurrido un error. Por favor, inténtelo de nuevo."); // Muestra un mensaje de alerta en caso de error de conexión
-      }
-    )
   }
 }
