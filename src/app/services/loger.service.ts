@@ -2,6 +2,7 @@ import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 const urlL='http://127.0.0.1/Apis/log.php';
+//const urlL='./Apis/log.php';
 
 @Injectable({
   providedIn: 'root'
