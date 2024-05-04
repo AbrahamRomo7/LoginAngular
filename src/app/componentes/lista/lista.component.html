@@ -1,0 +1,29 @@
+<div>
+    <h2>Lista de Estudiantes</h2>
+    <table>
+        <thead>
+          <tr>
+            <th>Cédula</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Teléfono</th>
+            <th>Dirección</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let est of estudiantes; let indice = index">
+            <td>{{ est.est_cedula }}</td>
+            <td>{{ est.est_nombre }}</td>
+            <td>{{ est.est_apellido }}</td>
+            <td>{{ est.est_telefono }}</td>
+            <td>{{ est.est_direccion }}</td>
+            <td>
+              <button >Editar</button>
+              <button >Eliminar</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      
+  </div>
+

@@ -24,7 +24,7 @@ export class LoginComponent implements OnInit {
       response => {
         console.log(response);
         if (response === "Ok") {
-          this.router.navigate(['/registro']); // Redirige a /registro si la respuesta es "Ok"
+          this.router.navigate(['/lista']); // Redirige a /registro si la respuesta es "Ok"
         } else {
           alert("Usuario o contraseña incorrectos"); // Muestra un mensaje de alerta en caso de error
           this.router.navigate(['/login']);
